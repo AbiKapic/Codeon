@@ -45,4 +45,9 @@ class EnvironmentConfig {
   static bool isLocal() => _instance?.environment == Environment.local;
   static bool isDevelopment() => _instance?.environment == Environment.dev;
   static bool isProduction() => _instance?.environment == Environment.prod;
+
+  // For testing purposes
+  static void reset() {
+    _instance = null;
+  }
 } 

@@ -52,6 +52,13 @@ dev_dependencies:
   flutter_lints: ^2.0.0
   build_runner: ^2.4.7
   injectable_generator: ^2.4.1
+  # Testing dependencies
+  mockito: ^5.4.4
+  bloc_test: ^9.1.5
+  integration_test:
+    sdk: flutter
+  test: ^1.24.9
+  golden_toolkit: ^0.15.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

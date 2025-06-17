@@ -30,6 +30,24 @@ android {
         versionName = flutter.versionName
     }
 
+    flavorDimensions "environment"
+    productFlavors {
+        local {
+            dimension "environment"
+            applicationIdSuffix ".local"
+            resValue "string", "app_name", "Codeon Local"
+        }
+        dev {
+            dimension "environment"
+            applicationIdSuffix ".dev"
+            resValue "string", "app_name", "Codeon Dev"
+        }
+        prod {
+            dimension "environment"
+            resValue "string", "app_name", "Codeon"
+        }
+    }
+
     buildTypes {
         release {
             // TODO: Add your own signing config for the release build.
